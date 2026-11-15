@@ -1,0 +1,54 @@
+Git Commands Used - Git & GitHub Workflow Assignment
+Name: Parv Mehta    Roll No: 2024eb02271
+=====================================================
+
+1. git init -b main
+   Creates a new empty Git repository in the current folder with "main" as the default branch.
+
+2. git config user.name "Parv Mehta" / git config user.email <email>
+   Sets the author name and email used for commits in this repository.
+
+3. git status
+   Shows the current branch, staged/unstaged changes and untracked files.
+
+4. git add index.html about.html
+   Stages the listed files so they are included in the next commit.
+
+5. git commit -m "message"
+   Records the staged changes as a new commit with a descriptive message.
+
+6. git branch feature
+   Creates a new branch named "feature" pointing at the current commit.
+
+7. git checkout feature
+   Switches the working directory to the "feature" branch.
+
+8. git checkout main
+   Switches back to the "main" branch.
+
+9. git merge --no-ff feature -m "Merge branch feature into main"
+   Merges the feature branch into main; --no-ff forces a merge commit so the branch history stays visible.
+
+10. git log --oneline --graph --all
+    Displays the commit history of all branches as a compact graph.
+
+11. git status --ignored
+    Shows files that Git is ignoring because of .gitignore (debug.log and temp/).
+
+12. git log --oneline -3
+    Shows only the last 3 commits in one-line format.
+
+13. git revert --no-edit HEAD
+    Undoes the last commit by creating a new commit that reverses its changes, keeping history safe for a shared repo.
+
+14. git remote add origin https://github.com/Parv-0210/git-workflow-assignment.git
+    Links the local repository to the remote GitHub repository under the name "origin".
+
+15. git remote -v
+    Lists the configured remotes and their URLs to verify the connection.
+
+16. git push -u origin main
+    Uploads the main branch to GitHub and sets origin/main as its upstream.
+
+17. git push origin feature
+    Uploads the feature branch to GitHub so the branch activity is visible there too.
